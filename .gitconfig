@@ -4,3 +4,6 @@
 	ci = commit -a
 	di = diff
 	br = branch
+[user]
+	name = fulsat9
+	email = fulsat9@gmail.com
