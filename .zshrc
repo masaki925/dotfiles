@@ -139,3 +139,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # ctl+u to be bound to backward-kill-line rather than kill-whole-line
 bindkey \^U backward-kill-line
 
+if [ $TERM != 'screen' ]; then screen; fi
+
