@@ -7,3 +7,6 @@
 [user]
 	name = masaki925
 	email = masaki925@gmail.com
+
+[push]
+        default = tracking
