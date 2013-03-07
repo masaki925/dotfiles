@@ -1,9 +1,14 @@
 "
 set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
+set cursorline        " highlight cursor line
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
+
+au BufNewFile,BufRead php-fpm*.conf set filetype=dosini
+au BufNewFile,BufRead php-fpm*.d/*.conf set filetype=dosini
+au BufNewFile,BufRead php.ini* set filetype=dosini
 
 " spacing configration
 set tabstop=2         " Set Tabstop
