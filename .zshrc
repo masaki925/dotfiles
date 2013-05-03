@@ -127,12 +127,6 @@ setopt noautoremoveslash
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 # old config for m-iwamoto end ----
 
-alias ssh_fulsat9_root='ssh -i ~/.ssh/root.fulsat9.pem root@fulsat9.com'
-alias ssh_fulsat9_m-iwamoto='ssh -i ~/.ssh/id_rsa m-iwamoto@fulsat9.com'
-alias ssh_fluct='ssh -i ~/.ssh/fluct_canalis_privkey.pem -p 9022 canalis@210.168.30.200'
-alias ssh_web02_fulsat9_m-iwamoto='ssh -i ~/.ssh/id_rsa m-iwamoto@web02.fulsat9.com'
-alias ssh_test1="ssh m-iwamoto@192.168.41.226"
-
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
