@@ -4,7 +4,7 @@
 	ci = commit -a
 	di = diff
 	br = branch
-	lo = log --graph --color
+	lo = log --graph --color --decorate
 [user]
 	name = masaki925
 	email = masaki925@gmail.com
