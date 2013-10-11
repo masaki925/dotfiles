@@ -5,9 +5,19 @@
 	di = diff
 	br = branch
 	lo = log --graph --color --decorate
+	sd = stash drop
+	sl = stash list
+	sp = stash pop
+	ss = stash save
+	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+	rebase-master = rebase master
+
 [user]
 	name = masaki925
 	email = masaki925@gmail.com
+	
+[core]
+	editor = vim -c ¥"set fenc=utf-8¥"
 
 [push]
         default = tracking
