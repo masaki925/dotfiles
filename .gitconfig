@@ -11,6 +11,7 @@
 	ss = stash save
 	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 	rebase-master = rebase master
+	remove-deleted-files = !git ls-files --deleted | xargs -I % git rm %
 
 [user]
 	name = masaki925
