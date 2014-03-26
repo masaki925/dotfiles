@@ -89,8 +89,6 @@ setopt list_packed
 ## 最後のスラッシュを自動的に削除しない
 setopt noautoremoveslash
 
-<<<<<<< Updated upstream
-=======
 alias ssh_masaki925_root='ssh -i ~/.ssh/root.fulsat9.pem root@masaki925.com'
 alias ssh_masaki925_m-iwamoto='ssh -i ~/.ssh/id_rsa m-iwamoto@masaki925.com'
 alias ssh_web02_fulsat9_m-iwamoto='ssh -i ~/.ssh/id_rsa m-iwamoto@web02.fulsat9.com'
@@ -115,7 +113,6 @@ alias stop_redis="launchctl stop homebrew.mxcl.redis"
 #PATH=$HOME/.rbenv/bin:$PATH
 #eval "$(rbenv init -)"
 #export RBENV_ROOT=/usr/local/opt/rbenv
->>>>>>> Stashed changes
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
