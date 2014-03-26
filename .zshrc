@@ -1,9 +1,7 @@
-alias ll='ls -lF' alias la='ls -A'
-alias l='ls -CF'
-
 source ~/.zsh.d/prompt
 
 export LANG=ja_JP.UTF-8
+export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cacert.pem
 
 
 ## 履歴の保存先
@@ -91,12 +89,51 @@ setopt list_packed
 ## 最後のスラッシュを自動的に削除しない
 setopt noautoremoveslash
 
+<<<<<<< Updated upstream
+=======
+alias ssh_masaki925_root='ssh -i ~/.ssh/root.fulsat9.pem root@masaki925.com'
+alias ssh_masaki925_m-iwamoto='ssh -i ~/.ssh/id_rsa m-iwamoto@masaki925.com'
+alias ssh_web02_fulsat9_m-iwamoto='ssh -i ~/.ssh/id_rsa m-iwamoto@web02.fulsat9.com'
+alias ssh_web02_masaki925_m-iwamoto="ssh -i ~/.ssh/m-iwamoto.web02.masaki925.com m-iwamoto@219.94.252.110"
+alias random_str='LC_CTYPE=C tr -c -d "[:graph:]" < /dev/urandom | head -c 12'
+#alias random_str='LC_CTYPE=C tr -c -d "[:alnum:]" < /dev/urandom | head -c 12'
+alias ll='ls -lF' alias la='ls -A'
+alias l='ls -CF'
+alias bi='bundle install'
+alias be='bundle exec'
+alias bes='bundle exec spring'
+alias bowi='bower install'
+alias fs='foreman start'
+alias rs='rails server'
+alias rsd='rails server --debugger'
+alias git_rebase_master='git rebase master'
+alias vim_lo="vim -O config/locales/en.yml config/locales/ja.yml"
+alias start_redis="launchctl start homebrew.mxcl.redis"
+alias stop_redis="launchctl stop homebrew.mxcl.redis"
+
+# //// for Ruby version controll >>>
+#PATH=$HOME/.rbenv/bin:$PATH
+#eval "$(rbenv init -)"
+#export RBENV_ROOT=/usr/local/opt/rbenv
+>>>>>>> Stashed changes
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# <<< for Ruby version controll ////
+
+# //// for JavaScript version controll >>>
+PATH=$PATH:/usr/local/Cellar/node/0.8.22/bin
+PATH=$PATH:/usr/local/share/npm/bin
+# <<< for JavaScript version controll ////
+
+PATH=$PATH:/usr/local/Cellar/s3cmd/1.0.1/bin/
 
 # ctl+u to be bound to backward-kill-line rather than kill-whole-line
 bindkey \^U backward-kill-line
+# ctl+w back also to '/'
+WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 if [ $TERM != 'screen' ]; then screen; fi
+
+export GREP_OPTIONS="--color=auto"
 
