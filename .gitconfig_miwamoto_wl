@@ -14,8 +14,8 @@
 	remove-deleted-files = !git ls-files --deleted | xargs -I % git rm %
 
 [user]
-	name = masaki925
-	email = masaki925@gmail.com
+	name = miwamoto_wl
+	email = miwamoto@wanderlust.co.jp
 	
 [core]
 	editor = vim -c ¥"set fenc=utf-8¥"
