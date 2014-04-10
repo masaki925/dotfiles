@@ -1,5 +1,5 @@
 escape 
-scrollback 9999
+defscrollback 9999
 
 # for tab
 startup_message off
