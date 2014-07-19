@@ -9,6 +9,7 @@
 	sl = stash list
 	sp = stash pop
 	ss = stash save
+	fp = fetch --prune
 	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 	rebase-master = rebase master
 	remove-deleted-files = !git ls-files --deleted | xargs -I % git rm %
