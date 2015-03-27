@@ -13,6 +13,8 @@
 	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 	rebase-master = rebase master
 	remove-deleted-files = !git ls-files --deleted | xargs -I % git rm %
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+        lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 
 [user]
 	name = masaki925
