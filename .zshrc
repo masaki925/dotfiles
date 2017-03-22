@@ -89,10 +89,6 @@ setopt list_packed
 ## 最後のスラッシュを自動的に削除しない
 setopt noautoremoveslash
 
-alias ssh_masaki925_root='ssh -i ~/.ssh/root.fulsat9.pem root@masaki925.com'
-alias ssh_masaki925_m-iwamoto='ssh -i ~/.ssh/id_rsa m-iwamoto@masaki925.com'
-alias ssh_web02_fulsat9_m-iwamoto='ssh -i ~/.ssh/id_rsa m-iwamoto@web02.fulsat9.com'
-alias ssh_web02_masaki925_m-iwamoto="ssh -i ~/.ssh/m-iwamoto.web02.masaki925.com m-iwamoto@219.94.252.110"
 alias random_str='LC_CTYPE=C tr -c -d "[:graph:]" < /dev/urandom | head -c 12'
 #alias random_str='LC_CTYPE=C tr -c -d "[:alnum:]" < /dev/urandom | head -c 12'
 alias ll='ls -lF' alias la='ls -A'
@@ -108,14 +104,13 @@ alias git_rebase_master='git rebase master'
 alias vim_lo="vim -O config/locales/en.yml config/locales/ja.yml"
 alias start_redis="launchctl start homebrew.mxcl.redis"
 alias stop_redis="launchctl stop homebrew.mxcl.redis"
+alias gs="git st"
+alias gd="git di"
 
 # //// for Ruby version controll >>>
-#PATH=$HOME/.rbenv/bin:$PATH
-#eval "$(rbenv init -)"
-#export RBENV_ROOT=/usr/local/opt/rbenv
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
+export RBENV_ROOT=/usr/local/opt/rbenv
 # <<< for Ruby version controll ////
 
 # //// for JavaScript version controll >>>
