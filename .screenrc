@@ -1,4 +1,4 @@
-escape 
+escape ^Zz
 defscrollback 9999
 
 # for tab
