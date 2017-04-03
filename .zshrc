@@ -106,6 +106,7 @@ alias start_redis="launchctl start homebrew.mxcl.redis"
 alias stop_redis="launchctl stop homebrew.mxcl.redis"
 alias gs="git st"
 alias gd="git di"
+alias gdc="git di --cached"
 
 # //// for Ruby version controll >>>
 PATH=$HOME/.rbenv/bin:$PATH
