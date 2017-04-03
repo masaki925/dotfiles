@@ -18,6 +18,8 @@ set expandtab         " Expand tab as spaces
 set viminfo='100,h,:100
 set number
 
+set hlsearch
+
 " Mac ClipBoard
 vmap <silent> sy :!pbcopy; pbpaste<CR>
 map <silent> sp <esc>o<esc>v:!pbpaste<CR>
