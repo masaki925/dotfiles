@@ -51,6 +51,8 @@ Plugin 'Shougo/unite.vim'
 Plugin 'thinca/vim-ref'
 Plugin 'thinca/vim-quickrun'
 
+Plugin 'kana/vim-submode'
+
 filetype plugin indent on     " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -155,3 +157,12 @@ let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 " search 'do end' pair
 source $VIMRUNTIME/macros/matchit.vim
+
+call submode#enter_with('winsize', 'n', '', '<C-w>>', '<C-w>>')
+call submode#enter_with('winsize', 'n', '', '<C-w><', '<C-w><')
+call submode#enter_with('winsize', 'n', '', '<C-w>+', '<C-w>-')
+call submode#enter_with('winsize', 'n', '', '<C-w>-', '<C-w>+')
+call submode#map('winsize', 'n', '', '>', '<C-w>>')
+call submode#map('winsize', 'n', '', '<', '<C-w><')
+call submode#map('winsize', 'n', '', '+', '<C-w>-')
+call submode#map('winsize', 'n', '', '-', '<C-w>+')
