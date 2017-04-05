@@ -21,7 +21,7 @@
 	email = masaki925@gmail.com
 	
 [core]
-	editor = vim -c ¥"set fenc=utf-8¥"
+	editor = vim -c "set fenc=utf-8"
 
 [push]
         default = tracking
