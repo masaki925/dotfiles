@@ -1,8 +1,0 @@
-escape ^Zz
-defscrollback 9999
-
-# for tab
-startup_message off
-hardstatus alwayslastline "%{= wg} %-w%{=bu dr}%n %t%{-}%+w %= %{=b kw} %Y/%m/%d %0c"
-sorendition "+rb .G"
-vbell off

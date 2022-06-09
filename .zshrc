@@ -96,37 +96,16 @@ alias l='ls -CF'
 alias bi='bundle install'
 alias be='bundle exec'
 alias bes='bundle exec spring'
-alias bowi='bower install'
-alias fs='foreman start'
 alias rs='rails server'
 alias rsd='rails server --debugger'
-alias git_rebase_master='git rebase master'
-alias vim_lo="vim -O config/locales/en.yml config/locales/ja.yml"
-alias start_redis="launchctl start homebrew.mxcl.redis"
-alias stop_redis="launchctl stop homebrew.mxcl.redis"
 alias gs="git st"
 alias gd="git di"
 alias gdc="git di --cached"
-
-# //// for Ruby version controll >>>
-PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init -)"
-export RBENV_ROOT=/usr/local/opt/rbenv
-# <<< for Ruby version controll ////
-
-# //// for JavaScript version controll >>>
-PATH=$PATH:/usr/local/Cellar/node/0.8.22/bin
-PATH=$PATH:/usr/local/share/npm/bin
-# <<< for JavaScript version controll ////
-
-PATH=$PATH:/usr/local/Cellar/s3cmd/1.0.1/bin/
 
 # ctl+u to be bound to backward-kill-line rather than kill-whole-line
 bindkey \^U backward-kill-line
 # ctl+w back also to '/'
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
-
-if [ $TERM != 'screen' ]; then screen; fi
 
 export GREP_OPTIONS="--color=auto"
 
