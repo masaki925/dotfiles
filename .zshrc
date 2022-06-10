@@ -93,11 +93,6 @@ alias random_str='LC_CTYPE=C tr -c -d "[:graph:]" < /dev/urandom | head -c 12'
 #alias random_str='LC_CTYPE=C tr -c -d "[:alnum:]" < /dev/urandom | head -c 12'
 alias ll='ls -lF' alias la='ls -A'
 alias l='ls -CF'
-alias bi='bundle install'
-alias be='bundle exec'
-alias bes='bundle exec spring'
-alias rs='rails server'
-alias rsd='rails server --debugger'
 alias gs="git st"
 alias gd="git di"
 alias gdc="git di --cached"
@@ -108,4 +103,19 @@ bindkey \^U backward-kill-line
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 export GREP_OPTIONS="--color=auto"
+
+# ctl+u to be bound to backward-kill-line rather than kill-whole-line
+bindkey \^U backward-kill-line
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "$HOME/lib/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/lib/google-cloud-sdk/path.zsh.inc"; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f "$HOME/lib/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/lib/google-cloud-sdk/completion.zsh.inc"; fi
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export PATH="$HOME/.poetry/bin:$PATH"
 
