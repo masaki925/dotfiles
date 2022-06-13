@@ -96,6 +96,11 @@ alias l='ls -CF'
 alias gs="git st"
 alias gd="git di"
 alias gdc="git di --cached"
+alias gp="git pull"
+alias dp="docker ps"
+alias dpa="docker ps --all"
+alias di="docker images"
+alias dia="docker images --all"
 
 # ctl+u to be bound to backward-kill-line rather than kill-whole-line
 bindkey \^U backward-kill-line
