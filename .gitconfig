@@ -1,27 +1,31 @@
 [alias]
-	co = checkout
-	st = status
-	ci = commit -a
-	di = diff
-	br = branch
-	lo = log --graph --color --decorate
-	sd = stash drop
-	sl = stash list
-	sp = stash pop
-	ss = stash save
-	fp = fetch --prune
-	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
-	rebase-master = rebase master
-	remove-deleted-files = !git ls-files --deleted | xargs -I % git rm %
+  co = checkout
+  st = status
+  ci = commit -a
+  di = diff
+  br = branch
+  lo = log --graph --color --decorate
+  sd = stash drop
+  sl = stash list
+  sp = stash pop
+  ss = stash save
+  fp = fetch --prune
+  delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+  rebase-master = rebase master
+  remove-deleted-files = !git ls-files --deleted | xargs -I % git rm %
         lol = log --graph --decorate --pretty=oneline --abbrev-commit
         lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 
 [user]
-	name = masaki925
-	email = masaki925@gmail.com
-	
+  name = masaki925
+  email = masaki925@gmail.com
+  
 [core]
-	editor = vim -c "set fenc=utf-8"
+  editor = vim -c "set fenc=utf-8"
 
 [push]
-        default = tracking
+  default = tracking
+
+[pager]
+  branch = false
+
