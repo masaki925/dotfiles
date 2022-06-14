@@ -28,5 +28,5 @@
   default = tracking
 
 [pull]
-	rebase = false
+  rebase = false
 
