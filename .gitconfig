@@ -27,3 +27,6 @@
 [push]
   default = tracking
 
+[pull]
+	rebase = false
+
