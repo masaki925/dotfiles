@@ -22,16 +22,13 @@
   
 [core]
   editor = vim -c "set fenc=utf-8"
+  pager = less -X -F
 
 [push]
   default = tracking
 
 [pull]
   rebase = false
-
-[pager]
-  branch = false
-  diff = false
 
 [init]
   defaultBranch = main
