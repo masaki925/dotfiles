@@ -36,6 +36,10 @@ Plug 'previm/previm'
 Plug 'kana/vim-submode'
 Plug 'preservim/nerdtree'
 
+" requires vim to be compiled with `python3`
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
+
 call plug#end()
 
 " 各種設定の読み込み
