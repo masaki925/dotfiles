@@ -34,6 +34,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'previm/previm'
 
 Plug 'kana/vim-submode'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
