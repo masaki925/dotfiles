@@ -1,11 +1,7 @@
 source ~/.zsh.d/prompt
 
 export LANG=ja_JP.UTF-8
-export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cacert.pem
 
-
-## 履歴の保存先
-HISTFILE=$HOME/.zsh-history
 ## メモリに展開する履歴の数
 HISTSIZE=100000
 ## 保存する履歴の数
@@ -102,16 +98,16 @@ alias dp="docker ps"
 alias dpa="docker ps --all"
 alias di="docker images"
 alias dia="docker images --all"
+alias dc="docker compose"
+alias dcp="docker compose ps"
 
 # ctl+u to be bound to backward-kill-line rather than kill-whole-line
 bindkey \^U backward-kill-line
+
 # ctl+w back also to '/'
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 export GREP_OPTIONS="--color=auto"
-
-# ctl+u to be bound to backward-kill-line rather than kill-whole-line
-bindkey \^U backward-kill-line
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "$HOME/lib/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/lib/google-cloud-sdk/path.zsh.inc"; fi
