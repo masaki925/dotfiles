@@ -100,6 +100,8 @@ alias di="docker images"
 alias dia="docker images --all"
 alias dc="docker compose"
 alias dcp="docker compose ps"
+alias current_dir='basename $PWD'
+alias dcr='docker compose run --rm `current_dir`'
 
 # ctl+u to be bound to backward-kill-line rather than kill-whole-line
 bindkey \^U backward-kill-line
