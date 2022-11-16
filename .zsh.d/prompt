@@ -122,6 +122,11 @@ update_prompt()
     if [ -n "$vcs_info_msg_0_" ]; then
         RPROMPT="${vcs_info_msg_0_}-${RPROMPT}"
     fi
+
+    autoload -U colors; colors
+    if [ -n "$ZSH_KUBECTL_PROMPT" ]; then
+      RPROMPT='%{$fg[green]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
+    fi
 }
 
 ## コマンド実行前に呼び出されるフック。

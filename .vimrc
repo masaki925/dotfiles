@@ -40,6 +40,8 @@ Plug 'preservim/nerdtree'
 "Plug 'SirVer/ultisnips'
 "Plug 'honza/vim-snippets'
 
+Plug 'hashivim/vim-terraform'
+
 call plug#end()
 
 " 各種設定の読み込み

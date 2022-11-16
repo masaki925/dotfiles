@@ -129,3 +129,5 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(direnv hook zsh)"
 
+source ~/lib/zsh-kubectl-prompt/kubectl.zsh
+
