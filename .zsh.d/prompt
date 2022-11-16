@@ -125,7 +125,7 @@ update_prompt()
 
     autoload -U colors; colors
     if [ -n "$ZSH_KUBECTL_PROMPT" ]; then
-      RPROMPT='%{$fg[green]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
+      RPROMPT="%{$fg[green]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}-${RPROMPT}"
     fi
 }
 
